@@ -1,6 +1,6 @@
 # UTAU-WODTRLCSVoutputer
-UTAU-withoutDifficultToReadListCSVoutputer
-Licence:CC0
+UTAU-withoutDifficultToReadListCSVoutputer  
+Licence:CC0  
 
 # これは何?
 UTAU単独音用。OREMO付属の録音リスト(難読抜き単独音リスト)に対応したプログラムです。入力された文字列を処理し、CSV形式で音別に存在の有無をTrue/Falseで出力します。  
