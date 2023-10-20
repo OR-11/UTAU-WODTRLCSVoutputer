@@ -48,98 +48,98 @@ bool[] twi = new bool[4];
 bool breath=false;
 
 for (int i =0;i<inp.Length;i++){
-  if (inp[i]=='あ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) a[0]=true;
-  if (inp[i]=='い'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) a[1]=true;
-  if (inp[i]=='う'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) a[2]=true;
-  if (inp[i]=='え'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) a[3]=true;
-  if (inp[i]=='お'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) a[4]=true;
+  if (inp[i]=='あ'&&(i+1>=inp.Length||(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))))) a[0]=true;
+  if (inp[i]=='い'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) a[1]=true;
+  if (inp[i]=='う'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) a[2]=true;
+  if (inp[i]=='え'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) a[3]=true;
+  if (inp[i]=='お'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) a[4]=true;
   
-  if (inp[i]=='か'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) k[0]=true;
-  if (inp[i]=='き'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) k[1]=true;
-  if (inp[i]=='く'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) k[2]=true;
-  if (inp[i]=='け'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) k[3]=true;
-  if (inp[i]=='こ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) k[4]=true;
+  if (inp[i]=='か'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) k[0]=true;
+  if (inp[i]=='き'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) k[1]=true;
+  if (inp[i]=='く'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) k[2]=true;
+  if (inp[i]=='け'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) k[3]=true;
+  if (inp[i]=='こ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) k[4]=true;
   
-  if (inp[i]=='さ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) s[0]=true;
-  if (inp[i]=='し'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) s[1]=true;
-  if (inp[i]=='す'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) s[2]=true;
-  if (inp[i]=='せ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) s[3]=true;
-  if (inp[i]=='そ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) s[4]=true;
+  if (inp[i]=='さ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) s[0]=true;
+  if (inp[i]=='し'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) s[1]=true;
+  if (inp[i]=='す'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) s[2]=true;
+  if (inp[i]=='せ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) s[3]=true;
+  if (inp[i]=='そ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) s[4]=true;
   
-  if (inp[i]=='た'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) t[0]=true;
-  if (inp[i]=='ち'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) t[1]=true;
-  if (inp[i]=='つ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) t[2]=true;
-  if (inp[i]=='て'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) t[3]=true;
-  if (inp[i]=='と'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) t[4]=true;
+  if (inp[i]=='た'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) t[0]=true;
+  if (inp[i]=='ち'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) t[1]=true;
+  if (inp[i]=='つ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) t[2]=true;
+  if (inp[i]=='て'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) t[3]=true;
+  if (inp[i]=='と'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) t[4]=true;
   
-  if (inp[i]=='な'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) n_[0]=true;
-  if (inp[i]=='に'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) n_[1]=true;
-  if (inp[i]=='ぬ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) n_[2]=true;
-  if (inp[i]=='ね'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) n_[3]=true;
-  if (inp[i]=='の'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) n_[4]=true;
+  if (inp[i]=='な'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) n_[0]=true;
+  if (inp[i]=='に'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) n_[1]=true;
+  if (inp[i]=='ぬ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) n_[2]=true;
+  if (inp[i]=='ね'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) n_[3]=true;
+  if (inp[i]=='の'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) n_[4]=true;
   
-  if (inp[i]=='は'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) h[0]=true;
-  if (inp[i]=='ひ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) h[1]=true;
-  if (inp[i]=='ふ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) h[2]=true;
-  if (inp[i]=='へ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) h[3]=true;
-  if (inp[i]=='ほ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) h[4]=true;
+  if (inp[i]=='は'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) h[0]=true;
+  if (inp[i]=='ひ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) h[1]=true;
+  if (inp[i]=='ふ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) h[2]=true;
+  if (inp[i]=='へ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) h[3]=true;
+  if (inp[i]=='ほ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) h[4]=true;
   
-  if (inp[i]=='ま'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) m[0]=true;
-  if (inp[i]=='み'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) m[1]=true;
-  if (inp[i]=='む'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) m[2]=true;
-  if (inp[i]=='め'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) m[3]=true;
-  if (inp[i]=='も'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) m[4]=true;
+  if (inp[i]=='ま'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) m[0]=true;
+  if (inp[i]=='み'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) m[1]=true;
+  if (inp[i]=='む'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) m[2]=true;
+  if (inp[i]=='め'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) m[3]=true;
+  if (inp[i]=='も'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) m[4]=true;
   
-  if (inp[i]=='や'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) y[0]=true;
-  if (inp[i]=='ゆ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) y[1]=true;
+  if (inp[i]=='や'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) y[0]=true;
+  if (inp[i]=='ゆ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) y[1]=true;
   if (inp[i]=='い'&&i+1<inp.Length&&inp[i+1]!='ぇ') y[2]=true;
-  if (inp[i]=='よ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) y[3]=true;
+  if (inp[i]=='よ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) y[3]=true;
   
-  if (inp[i]=='わ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) w[0]=true;
-  if (inp[i]=='い'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) w[1]=true;
-  if (inp[i]=='う'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) w[2]=true;
-  if (inp[i]=='え'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) w[3]=true;
-  if (inp[i]=='を'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) w[4]=true;
+  if (inp[i]=='わ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) w[0]=true;
+  if (inp[i]=='い'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) w[1]=true;
+  if (inp[i]=='う'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) w[2]=true;
+  if (inp[i]=='え'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) w[3]=true;
+  if (inp[i]=='を'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) w[4]=true;
   
-  if (inp[i]=='ら'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) r[0]=true;
-  if (inp[i]=='り'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) r[1]=true;
-  if (inp[i]=='る'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) r[2]=true;
-  if (inp[i]=='れ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) r[3]=true;
-  if (inp[i]=='ろ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) r[4]=true;
+  if (inp[i]=='ら'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) r[0]=true;
+  if (inp[i]=='り'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) r[1]=true;
+  if (inp[i]=='る'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) r[2]=true;
+  if (inp[i]=='れ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) r[3]=true;
+  if (inp[i]=='ろ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) r[4]=true;
 
-  if (inp[i]=='ん'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) n[0]=true;
+  if (inp[i]=='ん'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) n[0]=true;
   
   
-  if (inp[i]=='が'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) g[0]=true;
-  if (inp[i]=='ぎ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) g[1]=true;
-  if (inp[i]=='ぐ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) g[2]=true;
-  if (inp[i]=='げ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) g[3]=true;
-  if (inp[i]=='ご'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) g[4]=true;
+  if (inp[i]=='が'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) g[0]=true;
+  if (inp[i]=='ぎ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) g[1]=true;
+  if (inp[i]=='ぐ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) g[2]=true;
+  if (inp[i]=='げ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) g[3]=true;
+  if (inp[i]=='ご'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) g[4]=true;
   
-  if (inp[i]=='ざ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) z[0]=true;
-  if (inp[i]=='じ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) z[1]=true;
-  if (inp[i]=='ず'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) z[2]=true;
-  if (inp[i]=='ぜ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) z[3]=true;
-  if (inp[i]=='ぞ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) z[4]=true;
+  if (inp[i]=='ざ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) z[0]=true;
+  if (inp[i]=='じ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) z[1]=true;
+  if (inp[i]=='ず'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) z[2]=true;
+  if (inp[i]=='ぜ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) z[3]=true;
+  if (inp[i]=='ぞ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) z[4]=true;
   
-  if (inp[i]=='だ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) d[0]=true;
+  if (inp[i]=='だ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) d[0]=true;
   if (inp[i]=='で'&&i+1<inp.Length&&inp[i+1]!='ぃ') d[1]=true;
-  if (inp[i]=='づ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) d[2]=true;
-  if (inp[i]=='で'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) d[3]=true;
-  if (inp[i]=='ど'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) d[4]=true;
+  if (inp[i]=='づ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) d[2]=true;
+  if (inp[i]=='で'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) d[3]=true;
+  if (inp[i]=='ど'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) d[4]=true;
   
-  if (inp[i]=='ば'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) b[0]=true;
-  if (inp[i]=='び'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) b[1]=true;
-  if (inp[i]=='ぶ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) b[2]=true;
-  if (inp[i]=='べ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) b[3]=true;
-  if (inp[i]=='ぼ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) b[4]=true;
+  if (inp[i]=='ば'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) b[0]=true;
+  if (inp[i]=='び'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) b[1]=true;
+  if (inp[i]=='ぶ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) b[2]=true;
+  if (inp[i]=='べ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) b[3]=true;
+  if (inp[i]=='ぼ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) b[4]=true;
   
   
-  if (inp[i]=='ぱ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) p[0]=true;
-  if (inp[i]=='ぴ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) p[1]=true;
-  if (inp[i]=='ぷ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) p[2]=true;
-  if (inp[i]=='ぺ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) p[3]=true;
-  if (inp[i]=='ぽ'&&(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ'))) p[4]=true;
+  if (inp[i]=='ぱ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) p[0]=true;
+  if (inp[i]=='ぴ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) p[1]=true;
+  if (inp[i]=='ぷ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) p[2]=true;
+  if (inp[i]=='ぺ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) p[3]=true;
+  if (inp[i]=='ぽ'&&(i+1>=inp.Length||(i+1<inp.Length&&(inp[i+1]!='ょ'&&inp[i+1]!='ゅ'&&inp[i+1]!='ゃ')))) p[4]=true;
   
   if (inp[i]=='ゃ') xy[0]=true;
   if (inp[i]=='ゅ') xy[1]=true;
